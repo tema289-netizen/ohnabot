@@ -1,13 +1,14 @@
 import discord
 from discord.ext import commands
 import random
+import os
 import asyncio
 import re
 from collections import defaultdict
 from datetime import datetime, timedelta
 
 # ТОКЕН ВАШЕГО БОТА
-TOKEN = 'MTIzODc4ODM0NDkyNjk2NTgzMQ.GaB5Nk.7T1lTDMzFzUlWZJ3Z96LTqIW2Zp3gOb7-x2kno'
+TOKEN = os.environ.get('BOT_TOKEN')
 
 # Настройка бота
 intents = discord.Intents.all()
